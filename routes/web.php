@@ -32,3 +32,7 @@ Route::get('/profil', function () {
 Route::get('/matching', function () {
     return view('matching');
 });
+
+Route::get('/coupleImg', function () {
+    return view('coupleImg');
+});
