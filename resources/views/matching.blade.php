@@ -23,7 +23,7 @@
 
                 <h1 class="font-bold">About me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat obcaecati hic, minima error
-                    similique officia</p>
+                    similique officia e</p>
                 <div class="inline-block justify-between m-12">
                     <button
                         class="px-4 py-1 text-sm text-pink-600 font-semibold rounded-full border border-pink-200 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2">YES</button>
