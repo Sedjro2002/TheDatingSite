@@ -17,9 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/signInUp', function () {
-    return view('signInUp');
-});
+Route::get('signInUp', 'App\Http\Controllers\UserController@create')->name('signInUp');
+Route::post('questionnary', 'App\Http\Controllers\UserController@createUser')->name('createUser');
 
 Route::get('/questionnary', function () {
     return view('questionnary');

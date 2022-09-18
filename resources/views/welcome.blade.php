@@ -53,7 +53,7 @@
 
               <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a> --}}
 
-                                <a href="/signInUp" class="font-medium text-blue-600 hover:text-indigo-500">Log in</a>
+                                <a href="{{route('signInUp')}}" class="font-medium text-blue-600 hover:text-indigo-500">Log in</a>
                             </div>
                         </nav>
                     </div>

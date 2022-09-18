@@ -14,6 +14,7 @@
     <header class="bg-black h-14 w-full text-white font-extrabold text-center align-middle p-3"> Matching Time!!!
     </header>
     <div class="inline-flex w-full">
+
         <div class="w-1/2 h-screen align-middle bg-gradient-to-tl from-blue-200 via-blue-400 to-blue-600">
             <div class="w-2/3 h-2/3 p-7 mx-auto mt-20  rounded-xl  text-center bg-blue-800">
                 <div class="flex justify-center">
@@ -24,7 +25,7 @@
                 <h1 class="font-bold">About me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat obcaecati hic, minima error
                     similique officia e</p>
-                <div class="inline-block justify-between m-12">
+                <div class="inline-block justify-between mt-12  sm:mt-5">
                     <button
                         class="px-4 py-1 text-sm text-pink-600 font-semibold rounded-full border border-pink-200 hover:text-white hover:bg-pink-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-pink-600 focus:ring-offset-2">YES</button>
                     <button
@@ -42,7 +43,7 @@
                 <h1 class="font-bold">About me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellat obcaecati hic, minima error
                     similique officia</p>
-                <div class="inline-block justify-between m-12">
+                <div class="inline-block justify-between mt-12 sm:mt-5">
                     <button
                         class="px-4 py-1 text-sm text-blue-600 font-semibold rounded-full border border-blue-200 hover:text-white hover:bg-blue-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">YES</button>
                     <button
@@ -50,6 +51,11 @@
                 </div>
             </div>
         </div>
+
+            <a href="/profil" class="w-36 absolute h-9 bg-black text-white">
+                <div >Quit</div>
+            </a>
+
     </div>
 
 </body>
