@@ -16,22 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('signInUp', 'App\Http\Controllers\UserController@create')->name('signInUp');
-Route::post('questionnary', 'App\Http\Controllers\UserController@createUser')->name('createUser');
-
 Route::get('/questionnary', function () {
     return view('questionnary');
-});
+})->name('questionnary');
+
+Route::post('/profil', [App\Http\Controllers\UserInfoController::class, 'storeInfo'])->name('storeInfo');
+
+
 
 Route::get('/profil', function () {
     return view('profil');
-});
+})->middleware(['auth'])->name('profil');
 
-Route::get('/matching', function () {
-    return view('matching');
-});
-
-Route::get('/coupleImg', function () {
-    return view('coupleImg');
-});
+require __DIR__.'/auth.php';

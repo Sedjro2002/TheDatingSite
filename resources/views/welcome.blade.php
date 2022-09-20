@@ -53,7 +53,10 @@
 
               <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a> --}}
 
-                                <a href="{{route('signInUp')}}" class="font-medium text-blue-600 hover:text-indigo-500">Log in</a>
+                                <a href="{{ route('login') }}"
+                                    class="font-medium text-blue-600 hover:text-indigo-500">Log in</a>
+                                <a href="{{ route('register') }}"
+                                    class="font-medium text-blue-600 hover:text-indigo-500">Register</a>
                             </div>
                         </nav>
                     </div>
@@ -126,7 +129,8 @@
                 </main>
             </div>
         </div>
-        <div class="lg:absolute bg-gradient-to-tr from-cyan-600 to-pink-500 lg:inset-y-0 lg:right-0 lg:h-screen lg:w-1/2">
+        <div
+            class="lg:absolute bg-gradient-to-tr from-cyan-600 to-pink-500 lg:inset-y-0 lg:right-0 lg:h-screen lg:w-1/2">
             {{-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full" src="/coupleImg" alt=""> --}}
         </div>
     </div>

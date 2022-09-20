@@ -29,4 +29,5 @@ class CreateGirlsTable extends Migration
     {
         Schema::dropIfExists('girls');
     }
+    
 }

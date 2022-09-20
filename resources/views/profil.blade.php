@@ -36,17 +36,48 @@
 
         </div>
 
+        @if ($userInfo['users_id'] == Auth::user()->id)
+
+           
+
+            <div class="w-2/3 h-screen text-center align-middle bg-green-300">
+                <h1 class="mt-10">My choices</h1>
+                @for ($i = 1; $i < 11; $i++)
+                    <input class="mx-auto mt-2 w-1/2" disabled type="text"
+                        placeholder="{{ $userInfo['choice'.$i] }}">
+                @endfor
 
 
-        <div class="w-2/3 h-screen text-center bg-green-300">
-            <h1 class="mt-32">My description</h1>
+                <div>
+                    <a href="/questionnary">
+                        <button class="mt-9 bg-black w-fit text-white ">Fill the questionnary</button>
+                    </a>
+                </div>
+            </div>
+        @else
+            <div class="w-2/3 h-screen text-center align-middle bg-green-300">
+                <h1 class="mt-10">My choices</h1>
+                {{-- <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
             <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
             <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
             <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
             <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
             <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
             <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
-        </div>
+            <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
+            <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???">
+            <input class="mx-auto mt-2 w-1/2" disabled type="text" placeholder="???"> --}}
+                <div>
+                    <a href="/questionnary">
+                        <button class="mt-9 bg-black w-fit text-white ">Fill the questionnary</button>
+                    </a>
+                </div>
+            </div>
+
+        @endif
+
+
+
     </div>
 </body>
 
